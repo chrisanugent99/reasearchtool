@@ -1,0 +1,25 @@
+<?php include ('config.php');
+
+include ('templates/topnav.html');
+ ?>
+<html>
+	<head>
+	<title>REA DB Search</title>
+	</head>
+	<body>
+<h1>Search by Agent ID</h1>
+<form action="searchkeyword.php">
+  Please Enter a Keyword:<br>
+  <input type="text" name="keyword"><br>
+  <input type="submit" value="Submit">
+</form>
+	
+	<?php 
+	
+	// include('searchall.php');
+	// include('searchkeyword.php'); 
+	
+	
+	?>
+	<body>
+</html>
