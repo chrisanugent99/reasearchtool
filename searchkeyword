@@ -1,0 +1,16 @@
+<?php
+
+include ('config.php');
+$keywordfromform = $_GET["keyword"];
+	
+$sql = "SELECT Address, Property_Number FROM listingsbyprofile WHERE ListerID LIKE '%" . $keywordfromform . "%'";
+$result = $mysqli->query($sql);
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "<b>Listing Number: </b>" . $row["Property_Number"]. "<b> - Address: </b>" . $row["Address"]. "<b> Profile ID: </b>" . $row["ListerID"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+	?>
