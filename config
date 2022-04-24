@@ -1,0 +1,10 @@
+<?php
+//DATABASE CONNECTION
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "test_project";
+
+$mysqli = mysqli_connect($host, $username, $password, $database) or die('Could Not Connect');
+
+?>
