@@ -46,17 +46,8 @@ body {
 <body>
 
 <div class="sidenav">
-  <a href="#about">Home</a>
   <a href="listingsbyagent">Listings By Agent</a>
   <a href="findagent.html">Find Agent ID</a>
-  <a href="#contact">Contact</a>
 </div>
-
-<div class="main">
-  <h2>Home</h2>
-  <p>This sidebar is of full height (100%) and always shown.</p>
-  <p>Scroll down the page to see the result.</p>
-</div>
-   
 </body>
 </html> 
